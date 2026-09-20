@@ -1,6 +1,6 @@
 (async function autoSubmit() {
   // Danh sach CCCD
-  const codes = [
+  const cccd = [
     "096208005343", "096208011796", "096208006520", "096308007439", "096208006949",
     "096308009345", "096208013189", "096208011079", "096208008993", "096308011064",
     "096208009200", "095208006601", "096208003106", "096308005869", "096308002879",
@@ -81,7 +81,7 @@
     input.dispatchEvent(new Event('change', { bubbles: true }));
   }
 
-  for (let i = 0; i < codes.length; i++) {
+  for (let i = 0; i < cccd.length; i++) {
     const inputElement = document.querySelector(inputSelector) || document.querySelector('input[type="text"]');
     const submitButton = document.querySelector(buttonSelector);
 
@@ -91,15 +91,15 @@
     }
 
     inputElement.focus();
-    setInputValue(inputElement, codes[i]);
-    console.log(`[${i + 1}/${codes.length}] Da cap nhat ma: ${codes[i]}`);
+    setInputValue(inputElement, cccd[i]);
+    console.log(`[${i + 1}/${cccd.length}] Da cap nhat ma: ${cccd[i]}`);
 
     // Cho 5 giay
     await sleep(5000);
 
     // Click nut tra cuu
     submitButton.click();
-    console.log(`[${i + 1}/${codes.length}] Da bam Tra cuu.`);
+    console.log(`[${i + 1}/${cccd.length}] Da bam Tra cuu.`);
 
     // Cho 3 giay cho trang tai ket qua truoc khi sang ma tiep theo
     await sleep(3000);
