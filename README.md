@@ -17,5 +17,6 @@ Script hỗ trợ tự động hóa quá trình nhập danh sách số CCCD/Mã 
 4. Sao chép toàn bộ nội dung file `crawl.js` và dán vào cửa sổ Console.
 5. Nhấn `Enter` và chờ chương trình tự động chạy.
 
+Bổ sung : Sử dụng extension Nullflare để vượt capcha cloudflare
 
 <sub>~~Viết hoàn toàn bằng gehihi~~</sub>
